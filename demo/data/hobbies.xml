@@ -1,26 +1,34 @@
 <data>
     <record model="demo.hobby" id="demo.hobby_biking">
         <field name="name">Biking</field>
+        <field name="description">Outdoor cycling activity</field>
     </record>
-    <record model="demo.hobby"  id="demo.hobby_singing">
+    <record model="demo.hobby" id="demo.hobby_singing">
         <field name="name">Singing</field>
+        <field name="description">Using your voice to make music</field>
     </record>
     <record model="demo.hobby" id="demo.hobby_swimming">
         <field name="name">Swimming</field>
+        <field name="description">Moving through water for sport or fun</field>
     </record>
     <record model="demo.hobby" id="demo.hobby_camping">
         <field name="name">Camping</field>
+        <field name="description">Spending time outdoors with a tent</field>
     </record>
     <record model="demo.hobby" id="demo.hobby_gaming">
         <field name="name">Gaming</field>
+        <field name="description">Playing video or board games</field>
     </record>
     <record model="demo.hobby" id="demo.hobby_minecraft">
         <field name="name">Minecraft</field>
+        <field name="description">Building and exploring blocky worlds</field>
     </record>
     <record model="demo.hobby" id="demo.hobby_rts">
         <field name="name">RTS games</field>
+        <field name="description">Playing real-time strategy games</field>
     </record>
     <record model="demo.hobby" id="demo.hobby_gardening">
         <field name="name">Gardening</field>
+        <field name="description">Growing plants and flowers</field>
     </record>
 </data>
