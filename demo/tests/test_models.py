@@ -33,9 +33,7 @@ class TestUsers(TransactionCase):
 
     def test_description_is_required(self):
     with self.assertRaises(ValidationError):
-        self.env['demo.hobby'].create({
-            'name': 'Chess'
-        })
+        self.env['demo.hobby'].create({'name': 'Chess'})
 
 
     def test_description_one_line(self):
