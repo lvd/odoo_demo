@@ -24,3 +24,4 @@ class Hobby(models.Model):
     _description = 'Topic'
 
     name = fields.Char(string='Name', required=True)
+    description = fields.Text(string='Description', required=True)
