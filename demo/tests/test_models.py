@@ -22,18 +22,13 @@ class TestUsers(TransactionCase):
         super().tearDown()
         self.env.flush_all()
 
-    # def test_description_is_required(self):
-    #     with mute_logger('odoo.sql_db'):
-    #         with self.assertRaises(Exception):
-    #             user = self.env['res.users'].create({
-    #                 'name': 'Marie-Noël',
-    #                 'login': 'mnv',
-    #             })
-    #             user.description = None
-
     def test_description_is_required(self):
-    with self.assertRaises(ValidationError):
-        self.env['demo.hobby'].create({'name': 'Chess'})
+        with mute_logger('odoo.sql_db'):
+            with self.assertRaises(Exception):
+                self.env['res.users'].create({
+                    'name': 'Marie-Noël',
+                    'login': 'mnv',
+                })
 
 
     def test_description_one_line(self):
@@ -50,6 +45,7 @@ class TestUsers(TransactionCase):
         user = self.env['res.users'].create({
             'name': 'Pierre',
             'login': 'pie',
+            'description': 'I love games',
             'hobby': minecraft.id
         })
         self.assertEqual(user.hobby.name, 'Minecraft')

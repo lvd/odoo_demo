@@ -5,6 +5,7 @@
         <field name="inherit_id" ref="base.view_users_form_simple_modif" />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='email']" position="after">
+                <field name="description"/>
                 <field name="hobby"/>
             </xpath>
         </field>
